@@ -28,6 +28,6 @@ Download Binary From Github Release Tab
 * Extract Resources.rar to CGSF/BIN64 folder
 * [Directx 2010 june version] (http://www.microsoft.com/en-us/download/details.aspx?id=6812)
 
-Finally, In VSProject Folder
+Finally
 * Open ThirdParty.sln and Build it
 * Open AllProject.sln and Build it
