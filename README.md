@@ -1,6 +1,6 @@
 # CGSF 2019
 CGSF visual studio 2019 version.
-CFSF support only 64 BIT.
+CGSF support only 64 BIT.
 
 Build Instruction
 -------
