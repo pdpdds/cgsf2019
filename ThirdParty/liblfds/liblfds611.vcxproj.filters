@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="inc">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{c43fd031-024b-4986-9534-a8c153f54b18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\lfds611_abstraction">
+      <UniqueIdentifier>{967b4a42-d6e1-472e-a711-03d291b8b27c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\lfds611_freelist">
+      <UniqueIdentifier>{7f05302e-13ac-4cb7-9349-eb0d4454656b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\lfds611_queue">
+      <UniqueIdentifier>{be190b16-065a-4945-8b8d-522a48b6eeae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\lfds611_ringbuffer">
+      <UniqueIdentifier>{84d73724-794c-44a1-9f3f-7ca6f4ae352f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\lfds611_slist">
+      <UniqueIdentifier>{b8064e80-c91e-4c18-b0e9-095382bb2ddc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\lfds611_stack">
+      <UniqueIdentifier>{5631e14a-8355-43e9-8919-ef74eef55c28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\lfds611_liblfds">
+      <UniqueIdentifier>{d0b048c8-80cf-4ab2-879b-ddc7ed95f812}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="inc\liblfds611.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\liblfds611_internal.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lfds611_abstraction\lfds611_abstraction_internal_body.h">
+      <Filter>src\lfds611_abstraction</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lfds611_abstraction\lfds611_abstraction_internal_wrapper.h">
+      <Filter>src\lfds611_abstraction</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lfds611_freelist\lfds611_freelist_internal.h">
+      <Filter>src\lfds611_freelist</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lfds611_queue\lfds611_queue_internal.h">
+      <Filter>src\lfds611_queue</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lfds611_ringbuffer\lfds611_ringbuffer_internal.h">
+      <Filter>src\lfds611_ringbuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lfds611_slist\lfds611_slist_internal.h">
+      <Filter>src\lfds611_slist</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lfds611_stack\lfds611_stack_internal.h">
+      <Filter>src\lfds611_stack</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lfds611_liblfds\lfds611_liblfds_internal.h">
+      <Filter>src\lfds611_liblfds</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\lfds611_abstraction\lfds611_abstraction_free.c">
+      <Filter>src\lfds611_abstraction</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lfds611_abstraction\lfds611_abstraction_malloc.c">
+      <Filter>src\lfds611_abstraction</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lfds611_freelist\lfds611_freelist_delete.c">
+      <Filter>src\lfds611_freelist</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lfds611_freelist\lfds611_freelist_get_and_set.c">
+      <Filter>src\lfds611_freelist</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lfds611_freelist\lfds611_freelist_new.c">
+      <Filter>src\lfds611_freelist</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lfds611_freelist\lfds611_freelist_pop_push.c">
+      <Filter>src\lfds611_freelist</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lfds611_freelist\lfds611_freelist_query.c">
+      <Filter>src\lfds611_freelist</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lfds611_queue\lfds611_queue_delete.c">
+      <Filter>src\lfds611_queue</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lfds611_queue\lfds611_queue_new.c">
+      <Filter>src\lfds611_queue</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lfds611_queue\lfds611_queue_query.c">
+      <Filter>src\lfds611_queue</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lfds611_queue\lfds611_queue_queue.c">
+      <Filter>src\lfds611_queue</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lfds611_ringbuffer\lfds611_ringbuffer_delete.c">
+      <Filter>src\lfds611_ringbuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lfds611_ringbuffer\lfds611_ringbuffer_get_and_put.c">
+      <Filter>src\lfds611_ringbuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lfds611_ringbuffer\lfds611_ringbuffer_new.c">
+      <Filter>src\lfds611_ringbuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lfds611_ringbuffer\lfds611_ringbuffer_query.c">
+      <Filter>src\lfds611_ringbuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lfds611_slist\lfds611_slist_delete.c">
+      <Filter>src\lfds611_slist</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lfds611_slist\lfds611_slist_get_and_set.c">
+      <Filter>src\lfds611_slist</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lfds611_slist\lfds611_slist_link.c">
+      <Filter>src\lfds611_slist</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lfds611_slist\lfds611_slist_new.c">
+      <Filter>src\lfds611_slist</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lfds611_stack\lfds611_stack_delete.c">
+      <Filter>src\lfds611_stack</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lfds611_stack\lfds611_stack_new.c">
+      <Filter>src\lfds611_stack</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lfds611_stack\lfds611_stack_push_pop.c">
+      <Filter>src\lfds611_stack</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lfds611_stack\lfds611_stack_query.c">
+      <Filter>src\lfds611_stack</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lfds611_liblfds\lfds611_liblfds_abstraction_test_helpers.c">
+      <Filter>src\lfds611_liblfds</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lfds611_liblfds\lfds611_liblfds_aligned_free.c">
+      <Filter>src\lfds611_liblfds</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lfds611_liblfds\lfds611_liblfds_aligned_malloc.c">
+      <Filter>src\lfds611_liblfds</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
