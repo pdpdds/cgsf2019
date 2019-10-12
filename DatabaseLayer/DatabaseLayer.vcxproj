@@ -23,6 +23,7 @@
     <ProjectGuid>{4EF55E16-D453-444D-90E5-AB80F4E280BA}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>DatabaseLayer</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -155,7 +156,7 @@
       <PreprocessorDefinitions>HAVE_STRUCT_TIMESPEC;WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>../Common;../BaseLayer;./CppDatabasePool;./CppDatabasePool/mysql;../ThirdParty/Mysql/cppconn;../ThirdParty/Mysql/include;../ThirdParty/fastdb-375/fastdb/inc;../ThirdParty/SQLite3/include;../ThirdParty;../ThirdParty/ACE/Include;../ThirdParty/libzdb/include/db;../ThirdParty/libzdb/include/net;../ThirdParty/libzdb/include/util;../ThirdParty/pthread\include;../ThirdParty/libzdb/include/exceptions;../ThirdParty/libzdb/include</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4996;4251;4589</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>

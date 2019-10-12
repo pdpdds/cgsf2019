@@ -22,6 +22,7 @@
     <ProjectGuid>{FBA50FCE-B1AC-4B9B-82F0-BDC8F762B09D}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>CommonLayer</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -142,6 +143,7 @@
       <SDLCheck>false</SDLCheck>
       <AdditionalIncludeDirectories>../ThirdParty</AdditionalIncludeDirectories>
       <AdditionalOptions>-D_SCL_SECURE_NO_WARNINGS %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4251</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>

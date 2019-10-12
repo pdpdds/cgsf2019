@@ -23,6 +23,7 @@
     <ProjectGuid>{F7276B81-CD8E-4E0B-ABF5-BAB8FEBE0511}</ProjectGuid>
     <RootNamespace>ServerEngine</RootNamespace>
     <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -149,17 +150,18 @@
       <Optimization>MaxSpeed</Optimization>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <AdditionalIncludeDirectories>./External;../Common;../BaseLayer;../DatabaseLayer;../ThirdParty;../ThirdParty/ACE/include;../P2PLayer;../ThirdParty/liblfds/include;../ThirdParty/msgpack/include;../ThirdParty/avro/include;./RPC;../ThirdParty/zeromq/include;../ThirdParty/httpxx/include;../ThirdParty/http-parser/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_WINSOCK_DEPRECATED_NO_WARNINGS;WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <WarningLevel>Level4</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <AdditionalOptions>-D_SCL_SECURE_NO_WARNINGS %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4251;4589;4091;4127;4100</DisableSpecificWarnings>
     </ClCompile>
     <Lib>
-      <AdditionalDependencies>libprotobuf.lib;liblzf.lib;zlib.lib;libglog.lib;ace.lib;commonlayer.lib;msgpack.lib;avrocpp_s.lib;liblfds611.lib;http-parser.lib;httpxx.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(ProjectDir)/../VSProject/Lib/x64/Release;$(ProjectDir)/../ThirdParty/lib/x64/Release;$(ProjectDir)/../ThirdParty/ACE/lib/x64;$(ProjectDir)/../ThirdParty/MsgPack/lib/x64;$(ProjectDir)/../ThirdParty/Avro/lib/x64/Release;$(ProjectDir)/../ThirdParty/liblfds/lib/x64/RELEASE;$(ProjectDir)/../ThirdParty/http-parser/lib/x64/RELEASE;$(ProjectDir)/../ThirdParty/httpxx/lib/x64/RELEASE;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>liblzf.lib;commonlayer.lib;avrocpp_s.lib;liblfds611.lib;httpxx.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)/../VSProject/Lib/x64/Release;$(ProjectDir)/../ThirdParty/lib/x64/Release;$(ProjectDir)/../ThirdParty/Avro/lib/x64/Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>/ignore:4221 /ignore:4006 %(AdditionalOptions)</AdditionalOptions>
     </Lib>
   </ItemDefinitionGroup>

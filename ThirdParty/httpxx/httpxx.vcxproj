@@ -23,6 +23,7 @@
     <ProjectGuid>{D71BA5A8-EDDA-4C44-8471-999C41516768}</ProjectGuid>
     <RootNamespace>liblzf</RootNamespace>
     <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -86,7 +87,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <TargetName>$(ProjectName)</TargetName>
     <TargetExt>.lib</TargetExt>
-    <OutDir>..\..\lib\x64\Release\</OutDir>
+    <OutDir>..\lib\x64\Release\</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -140,9 +141,10 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>./include</AdditionalIncludeDirectories>
     </ClCompile>
     <Lib>
-      <OutputFile>..\lib\x64\Release\liblzf.lib</OutputFile>
+      <OutputFile>..\lib\x64\Release\httpxx.lib</OutputFile>
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>

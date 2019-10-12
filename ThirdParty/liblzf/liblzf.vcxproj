@@ -23,6 +23,7 @@
     <ProjectGuid>{8468FE5E-3585-441D-A6EA-0EEEC236AB7B}</ProjectGuid>
     <RootNamespace>liblzf</RootNamespace>
     <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
