@@ -8,7 +8,9 @@
 #include "GUIGame.h"
 
 GUIFSM::GUIFSM(eGUIState State)
-: GUIState(State)
+: GUIState(State),
+m_pCurrentState(0)
+
 {
 }
 
@@ -18,6 +20,9 @@ GUIFSM::~GUIFSM(void)
 
 bool GUIFSM::ProcessInput(UINT uMsg, WPARAM wParam, LPARAM lParam)
 {
+	if (m_pCurrentState == 0)
+		return false;
+
 	return m_pCurrentState->ProcessInput(uMsg, wParam, lParam);
 }
 

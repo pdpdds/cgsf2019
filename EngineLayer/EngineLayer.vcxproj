@@ -120,7 +120,7 @@
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
     <Lib>
-      <AdditionalLibraryDirectories>$(ProjectDir)/../VSProject/Lib/x64/debug;$(ProjectDir)/../ThirdParty/Avro/lib/x64/Debug;$(ProjectDir)/../ThirdParty/liblfds/lib/x64/DEBUG;$(ProjectDir)/../ThirdParty\lib\x64\debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ProjectDir)/../VSProject/Lib/x64/debug;$(ProjectDir)/../ThirdParty/Avro/lib/x64/Debug;$(ProjectDir)/../ThirdParty\lib\x64\debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>liblzf.lib;commonlayer.lib;avrocpp_s.lib;liblfds611.lib;httpxx.lib</AdditionalDependencies>
       <AdditionalOptions>/ignore:4221 /ignore:4006 %(AdditionalOptions)</AdditionalOptions>
     </Lib>
