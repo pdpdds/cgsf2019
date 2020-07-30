@@ -277,6 +277,9 @@ bool SFEngine::Start(char* szIP, unsigned short port)
 		LOG(INFO) << "Engine Starting... IP : " << szIP << " Port : " << port;
 	else
 		LOG(INFO) << "Engine Starting... IP : " << (char*)StringConversion::ToASCII(pInfo->serverIP).c_str() << " Port : " << pInfo->serverPort;
+
+	if (m_pNetworkEngine == nullptr)
+		return false;
 	
 	bool bResult = false;
 	if (port != 0)

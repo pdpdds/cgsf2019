@@ -1,0 +1,23 @@
+libmysql
+zlib
+protobuf
+ace
+openssl
+pthreads
+breakpad
+sqlite3
+zeromq
+http-parser
+cppzmq
+sdl2
+sdl2-net
+boost
+libxml2
+enet
+physfs
+lua
+sparsehash
+pcre
+
+-- cegui ºôµå
+glm
